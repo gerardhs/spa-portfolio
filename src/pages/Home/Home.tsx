@@ -1,11 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface HomeProps {}
 
-const Home: FC<HomeProps> = () => (
- <div>
-    Home Component
- </div>
-);
+const Home: FC<HomeProps> = () => <div>Home Component</div>;
 
 export default Home;

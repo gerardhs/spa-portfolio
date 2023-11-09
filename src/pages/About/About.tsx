@@ -1,11 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface AboutProps {}
 
-const About: FC<AboutProps> = () => (
- <div>
-    About Component
- </div>
-);
+const About: FC<AboutProps> = () => <div>About Component</div>;
 
 export default About;
