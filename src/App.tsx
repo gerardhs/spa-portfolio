@@ -14,7 +14,9 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={router} />
+    <div className="bg-background h-screen">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
