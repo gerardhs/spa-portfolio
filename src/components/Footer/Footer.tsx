@@ -1,12 +1,7 @@
 import React, { FC } from "react";
 
+interface FooterProps {}
 
-function Footer() {
-    return (
-        <footer>
-            Footer
-        </footer>
-    );
-}
+const Footer: FC<FooterProps> = () => <div>Footer Component</div>;
 
 export default Footer;
