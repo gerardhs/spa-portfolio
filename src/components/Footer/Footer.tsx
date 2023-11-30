@@ -1,7 +1,5 @@
-import React, { FC } from "react";
-
-interface FooterProps {}
-
-const Footer: FC<FooterProps> = () => <div>Footer Component</div>;
+function Footer() {
+  return <footer>Footer</footer>;
+}
 
 export default Footer;

@@ -3,18 +3,18 @@ import { Layout } from "./components";
 import { routes } from "./routes";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-
 function App() {
-
   const router = createBrowserRouter([
     {
       element: <Layout />,
-      children: routes
-    }
+      children: routes,
+    },
   ]);
 
   return (
-    <RouterProvider router={router} />
+    <div className="bg-background h-screen">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
