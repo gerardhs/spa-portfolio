@@ -7,10 +7,10 @@ const Projects = React.lazy(() => import("../pages/Projects/Projects"));
 const Contact = React.lazy(() => import("../pages/Contact/Contact"));
 
 const routes = [
-    { path: PathConstants.HOME, element: <Home /> },
-    { path: PathConstants.ABOUT, element: <About /> },
-    { path: PathConstants.PROJECTS, element: <Projects /> },
-    { path: PathConstants.CONTACT, element: <Contact /> },
-]
+  { path: PathConstants.HOME, element: <Home /> },
+  { path: PathConstants.ABOUT, element: <About /> },
+  { path: PathConstants.PROJECTS, element: <Projects /> },
+  { path: PathConstants.CONTACT, element: <Contact /> },
+];
 
 export default routes;
