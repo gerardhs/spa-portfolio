@@ -1,8 +1,8 @@
 {
-    "header":  {
-        "home": "Inici",
-        "about": "Sobre mi",
-        "projects": "Projectes",
-        "contact": "Contacte"
-    }
+  "header": {
+    "home": "Inici",
+    "about": "Sobre mi",
+    "projects": "Projectes",
+    "contact": "Contacte"
+  }
 }

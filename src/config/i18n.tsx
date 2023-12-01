@@ -1,20 +1,19 @@
 import i18next from "i18next";
-import { initReactI18next }  from  "react-i18next";
-import translationEN from '../locales/en/translation.json';
-import translationCAT from '../locales/cat/translation.json';
-import translationCAS from '../locales/cas/translation.json';
-
+import { initReactI18next } from "react-i18next";
+import translationEN from "../locales/en/translation.json";
+import translationCAT from "../locales/cat/translation.json";
+import translationCAS from "../locales/cas/translation.json";
 
 const resources = {
   en: {
-    translation: translationEN
+    translation: translationEN,
   },
-  cat:  {
-    translation: translationCAT
+  cat: {
+    translation: translationCAT,
   },
-  cas:  {
-    translation:  translationCAS
-  }
+  cas: {
+    translation: translationCAS,
+  },
 };
 
 i18next.use(initReactI18next).init({

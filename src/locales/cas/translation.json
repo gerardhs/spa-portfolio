@@ -1,8 +1,8 @@
 {
-    "header":  {
-        "home": "Inicio",
-        "about": "Acerca de mí",
-        "projects": "Proyectos",
-        "contact": "Contacto"
-    }
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
 }

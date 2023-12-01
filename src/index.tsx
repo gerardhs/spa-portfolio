@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import  i18n  from "./config/i18n";
+import i18n from "./config/i18n";
 import { I18nextProvider } from "react-i18next";
 
 const root = ReactDOM.createRoot(
@@ -12,8 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-        <I18nextProvider i18n={i18n}>
-
+    <I18nextProvider i18n={i18n}>
       <App />
     </I18nextProvider>
   </React.StrictMode>,
