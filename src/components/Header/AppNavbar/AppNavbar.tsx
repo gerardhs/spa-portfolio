@@ -1,34 +1,8 @@
-import HeaderLink from "../HeaderLink/HeaderLink";
-import React, { FC } from "react";
+import React from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import MobileHeaderLink from "../MobileHeaderLink/MobileHeaderLink";
-
-function NavList() {
-  return (
-    <div className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
-      <HeaderLink title="Home" href="/" />
-      <HeaderLink title="About" href="/about" />
-      <HeaderLink title="Projects" href="/projects" />
-      <HeaderLink title="Contact" href="/contact" />
-    </div>
-  );
-}
-
-interface MobileHeaderLinkProps {
-  onClose: () => void;
-}
-
-const MobileNavList: FC<MobileHeaderLinkProps> = ({ onClose }) => {
-  return (
-    <div className="border-y border-neutral-500 divide-y divide-neutral-500 overflow-x-hidden flex flex-col justify-center">
-      <MobileHeaderLink title="Home" href="/" onClose={onClose} />
-      <MobileHeaderLink title="About" href="/about" onClose={onClose} />
-      <MobileHeaderLink title="Projects" href="/projects" onClose={onClose} />
-      <MobileHeaderLink title="Contact" href="/contact" onClose={onClose} />
-    </div>
-  );
-};
+import MobileNavList from "../MobileNavList/MobileNavList";
+import NavList from "../NavList/NavList";
 
 export default function AppNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
