@@ -13,9 +13,9 @@ const HeaderLink: FC<HeaderLinkProps> = ({ href, title }) => {
   return (
     <Link
       to={href}
-      className={`text-center font-black hover:text-tertiary transition-all duration-500 ease-in-out 
+      className={`text-center font-black transition-all duration-500 ease-in-out 
       relative before:content-[''] before:absolute before:block before:w-full before:h-[0.1rem] 
-      before:bottom-0 before:left-0 before:bg-black before:hover:bg-tertiary
+      before:bottom-0 before:left-0 before:bg-black
       before:scale-x-0 before:origin-top-left before:hover:scale-x-100 
       before:transition-all before:ease-in-out before:duration-500 ${
         isActive ? "before:scale-x-100" : ""
