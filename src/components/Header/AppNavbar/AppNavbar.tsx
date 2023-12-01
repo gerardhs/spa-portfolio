@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import MobileNavList from "../MobileNavList/MobileNavList";
