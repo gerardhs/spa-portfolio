@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import * as Pages from "../pages";
+import { PathConstants } from "../routes";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={Pages.Home} />
-        <Route path="/about" Component={Pages.About} />
-        <Route path="/projects" Component={Pages.Projects} />
-        <Route path="/contact" Component={Pages.Contact} />
+        <Route path={PathConstants.HOME} Component={Pages.Home} />
+        <Route path={PathConstants.ABOUT} Component={Pages.About} />
+        <Route path={PathConstants.PROJECTS} Component={Pages.Projects} />
+        <Route path={PathConstants.CONTACT} Component={Pages.Contact} />
       </Routes>
     </BrowserRouter>
   );

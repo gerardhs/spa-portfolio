@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/872.cc23a1fb.chunk.js","mappings":"sIAMA,UAF4B,WAAH,OAASA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,kBAAqB,C","sources":["pages/Home/Home.tsx"],"sourcesContent":["import { FC } from \"react\";\n\ninterface HomeProps {}\n\nconst Home: FC<HomeProps> = () => <div>Home Component</div>;\n\nexport default Home;\n"],"names":["_jsx","children"],"sourceRoot":""}
