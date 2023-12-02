@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translation.json";
 import translationCA from "../locales/ca/translation.json";
 import translationES from "../locales/es/translation.json";
+import { LOCALES, LOCAL_STORAGE_KEYS } from "../utils";
 
 const resources = {
   en: {
@@ -18,11 +19,12 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: localStorage.getItem('selectedLanguage') || 'en',
-  debug: true,
+  lng:
+    localStorage.getItem(LOCAL_STORAGE_KEYS.SELECTED_LANGUAGE) ||
+    LOCALES.ENGLISH,
   interpolation: {
     escapeValue: false,
-  }
+  },
 });
 
 export default i18n;

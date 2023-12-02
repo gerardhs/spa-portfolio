@@ -1,8 +1,15 @@
 {
   "header": {
-    "home": "Inici",
-    "about": "Sobre mi",
-    "projects": "Projectes",
-    "contact": "Contacte"
+    "labels": {
+      "home": "Inici",
+      "about": "Sobre mi",
+      "projects": "Projectes",
+      "contact": "Contacte"
+    },
+    "language": {
+      "en": "English",
+      "es": "Español",
+      "ca": "Català"
+    }
   }
 }

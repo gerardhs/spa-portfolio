@@ -32,10 +32,10 @@ export default function AppNavbar() {
         >
           Gerard
         </Link>
-        <div>
-          <LanguageSelector />
-        </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-10">
+          <div>
+            <LanguageSelector />
+          </div>
           <NavList />
         </div>
         <button

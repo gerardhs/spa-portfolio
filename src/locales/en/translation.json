@@ -1,8 +1,15 @@
 {
   "header": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact"
+    "labels": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "language": {
+      "en": "English",
+      "es": "Español",
+      "ca": "Català"
+    }
   }
 }
