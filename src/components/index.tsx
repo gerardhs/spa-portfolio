@@ -6,3 +6,4 @@ export { default as HeaderLink } from "./Header/HeaderLink/HeaderLink";
 export { default as MobileHeaderLink } from "./Header/MobileHeaderLink/MobileHeaderLink";
 export { default as NavList } from "./Header/NavList/NavList";
 export { default as MobileNavList } from "./Header/MobileNavList/MobileNavList";
+export { default as LanguageSelector } from "./Header/LanguageSelector/LanguageSelector";

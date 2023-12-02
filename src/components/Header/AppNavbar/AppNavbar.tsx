@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import MobileNavList from "../MobileNavList/MobileNavList";
 import NavList from "../NavList/NavList";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 export default function AppNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -31,6 +32,9 @@ export default function AppNavbar() {
         >
           Gerard
         </Link>
+        <div>
+          <LanguageSelector />
+        </div>
         <div className="hidden lg:block">
           <NavList />
         </div>

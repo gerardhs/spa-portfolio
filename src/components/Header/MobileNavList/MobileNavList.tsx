@@ -1,33 +1,36 @@
 import { FC } from "react";
 import { MobileHeaderLink } from "../..";
-import { t } from "i18next";
-import { PathConstants } from "../../../routes";
+import { useTranslation } from "react-i18next";
+import { PATH_CONSTANTS } from "../../../utils";
 
 interface MobileHeaderLinkProps {
   onClose: () => void;
 }
 
 const MobileNavList: FC<MobileHeaderLinkProps> = ({ onClose }) => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="border-y border-neutral-500 divide-y divide-neutral-500 overflow-x-hidden flex flex-col justify-center">
       <MobileHeaderLink
-        title={t("header.home")}
-        href={PathConstants.HOME}
+        title={t('header.home')}
+        href={PATH_CONSTANTS.HOME}
         onClose={onClose}
       />
       <MobileHeaderLink
-        title={t("header.about")}
-        href={PathConstants.ABOUT}
+        title={t('header.about')}
+        href={PATH_CONSTANTS.ABOUT}
         onClose={onClose}
       />
       <MobileHeaderLink
-        title={t("header.projects")}
-        href={PathConstants.PROJECTS}
+        title={t('header.projects')}
+        href={PATH_CONSTANTS.PROJECTS}
         onClose={onClose}
       />
       <MobileHeaderLink
-        title={t("header.contact")}
-        href={PathConstants.CONTACT}
+        title={t('header.contact')}
+        href={PATH_CONSTANTS.CONTACT}
         onClose={onClose}
       />
     </div>

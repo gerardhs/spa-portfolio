@@ -1,4 +1,4 @@
-import i18next from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translation.json";
 import translationCA from "../locales/ca/translation.json";
@@ -8,17 +8,21 @@ const resources = {
   en: {
     translation: translationEN,
   },
-  cat: {
+  ca: {
     translation: translationCA,
   },
-  cas: {
+  es: {
     translation: translationES,
   },
 };
 
-i18next.use(initReactI18next).init({
+i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
+  lng: localStorage.getItem('selectedLanguage') || 'en',
+  debug: true,
+  interpolation: {
+    escapeValue: false,
+  }
 });
 
-export default i18next;
+export default i18n;
