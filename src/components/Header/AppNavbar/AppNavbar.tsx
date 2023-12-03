@@ -33,10 +33,10 @@ export default function AppNavbar() {
           Gerard
         </Link>
         <div className="hidden lg:flex items-center gap-10">
+          <NavList />
           <div>
             <LanguageSelector />
           </div>
-          <NavList />
         </div>
         <button
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

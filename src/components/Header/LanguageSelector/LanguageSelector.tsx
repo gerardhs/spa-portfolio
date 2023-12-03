@@ -1,4 +1,8 @@
-import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+import {
+  CheckCircleIcon,
+  ChevronDownIcon,
+  GlobeAltIcon,
+} from "@heroicons/react/24/outline";
 import {
   Dispatch,
   RefObject,
@@ -61,20 +65,19 @@ const LanguageSelector = () => {
       <button
         ref={buttonRef}
         type="button"
-        className="flex px-3 py-1.5 font-semibold border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-full text-sm dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        className="w-24  flex px-3 py-1.5 font-semibold border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-full text-sm dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
         onClick={toggleDropdown}
       >
         <GlobeAltIcon className="h-4 w-4 me-1 mt-0.5" strokeWidth={1} />
-        <span>{i18n.language.toLocaleUpperCase()}</span>
+        <span className="w-6">{i18n.language.toLocaleUpperCase()}</span>
         <ChevronDownIcon
-          className={`h-4 w-4 ml-2 mt-[0.2rem] transition-transform duration-500 ease-in-out transform ${
+          className={`h-4 w-4 ml-2 mt-[0.2rem] transition-transform duration-700 ease-in-out transform ${
             isDropdownOpen
               ? "translate-y-[-0.1em] rotate-[-180deg]"
               : "rotate-0"
           }`}
         ></ChevronDownIcon>
       </button>
-
       <Transition
         show={isDropdownOpen}
         enter="transition-opacity duration-500"
@@ -87,43 +90,49 @@ const LanguageSelector = () => {
         <div
           ref={dropdownRef}
           className={
-            "z-10 font-black absolute translate-y-2  bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+            "w-28 z-10 font-black absolute translate-y-2 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
           }
         >
           <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-            {i18n.language !== LOCALES.ENGLISH && (
-              <li
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
-                onClick={() => {
-                  changeLanguage(LOCALES.ENGLISH);
-                  toggleDropdown();
-                }}
-              >
-                {t("header.language.en")}
-              </li>
-            )}
-            {i18n.language !== LOCALES.CASTELLANO && (
-              <li
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
-                onClick={() => {
-                  changeLanguage(LOCALES.CASTELLANO);
-                  toggleDropdown();
-                }}
-              >
-                {t("header.language.es")}
-              </li>
-            )}
-            {i18n.language !== LOCALES.CATALA && (
-              <li
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
-                onClick={() => {
-                  changeLanguage(LOCALES.CATALA);
-                  toggleDropdown();
-                }}
-              >
-                {t("header.language.ca")}
-              </li>
-            )}
+            <li
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              onClick={() => {
+                changeLanguage(LOCALES.ENGLISH);
+              }}
+            >
+              <div className="flex gap-2">
+                <span>{t("header.language.en")}</span>
+                {i18n.language === LOCALES.ENGLISH && (
+                  <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
+                )}
+              </div>
+            </li>
+            <li
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              onClick={() => {
+                changeLanguage(LOCALES.CASTELLANO);
+              }}
+            >
+              <div className="flex gap-2">
+                <span> {t("header.language.es")}</span>
+                {i18n.language === LOCALES.CASTELLANO && (
+                  <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
+                )}
+              </div>
+            </li>
+            <li
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              onClick={() => {
+                changeLanguage(LOCALES.CATALA);
+              }}
+            >
+              <div className="flex gap-2">
+                <span>{t("header.language.ca")}</span>
+                {i18n.language === LOCALES.CATALA && (
+                  <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
+                )}
+              </div>
+            </li>
           </ul>
         </div>
       </Transition>
