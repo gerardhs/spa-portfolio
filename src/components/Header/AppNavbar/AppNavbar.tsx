@@ -28,26 +28,28 @@ export default function AppNavbar() {
       <div className="flex items-center justify-between">
         <Link
           to=""
-          className="mr-4 font-semibold hover:text-tertiary cursor-pointer py-1.5"
+          className="mr-2 font-semibold hover:text-tertiary cursor-pointer py-1.5"
         >
-          Gerard
+          Placeholder
         </Link>
         <div className="hidden lg:flex items-center gap-10">
           <NavList />
-          <div>
+          <div className="mr-2">
             <LanguageSelector />
           </div>
         </div>
-        <button
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </button>
+        <div className="lg:hidden">
+          <button
+            className="ml-auto h-12 w-12 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent "
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-12 w-12" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-12 w-12" strokeWidth={2} />
+            )}
+          </button>
+        </div>
       </div>
       {openNav && (
         <div
@@ -55,8 +57,9 @@ export default function AppNavbar() {
             openNav ? "block" : "hidden"
           }`}
         >
-          <div className="max-h-64 overflow-y-auto">
+          <div className="max-h-64 overflow-y-auto flex flex-col gap-2">
             <MobileNavList onClose={handleMobileHeaderLinkClick} />
+            <div className="flex justify-end"></div>
           </div>
         </div>
       )}
