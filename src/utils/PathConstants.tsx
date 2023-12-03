@@ -1,5 +1,5 @@
 const PATH_CONSTANTS = {
-  HOME: "/",
+  HOME: "",
   ABOUT: "about",
   PROJECTS: "projects",
   CONTACT: "contact",

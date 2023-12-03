@@ -27,8 +27,8 @@ export default function AppNavbar() {
     <nav className="my-auto mx-auto max-w-screen-2xl px-3 py-6">
       <div className="flex items-center justify-between">
         <Link
-          to="/"
-          className="mr-4 font-black hover:text-tertiary cursor-pointer py-1.5"
+          to=""
+          className="mr-4 font-semibold hover:text-tertiary cursor-pointer py-1.5"
         >
           Gerard
         </Link>

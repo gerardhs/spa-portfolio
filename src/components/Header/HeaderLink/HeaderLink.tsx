@@ -8,12 +8,12 @@ interface HeaderLinkProps {
 
 const HeaderLink: FC<HeaderLinkProps> = ({ href, title }) => {
   const location = useLocation();
-  const isActive = location.pathname === href;
+  const isActive = location.pathname.substring(1) === href;
 
   return (
     <Link
       to={href}
-      className={`text-center font-black transition-all duration-500 ease-in-out 
+      className={`text-center font-semibold transition-all duration-500 ease-in-out 
       relative before:content-[''] before:absolute before:block before:w-full before:h-[0.1rem] 
       before:bottom-0 before:left-0 before:bg-black
       before:scale-x-0 before:origin-top-left before:hover:scale-x-100 
