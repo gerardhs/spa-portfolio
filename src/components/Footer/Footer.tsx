@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { PATH_CONSTANTS, SOCIALS } from "../../utils";
 import { Link } from "react-router-dom";
-import { LanguageSelector } from "..";
 
 function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-neutral-200 fixed bottom-0 w-full">
+    <footer className="fixed bottom-0 w-full">
       <div className="p-2 w-full mx-auto max-w-screen-2xl flex items-center justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           {t("footer.copyright")}
@@ -33,7 +32,12 @@ function Footer() {
               {t("footer.labels.contact")}
             </Link>
           </li>
-          <div className="flex items-center gap-8 m-4">
+          <li>
+            <Link to={PATH_CONSTANTS.PRIVACY} className="underline hover:no-underline hover:text-gray-900 m-4">
+              {t("footer.labels.privacy")}
+            </Link>
+          </li>
+          <div className="flex items-center gap-6 m-4">
             <Link to={SOCIALS.GITHUB} className="p-1 rounded hover:text-gray-900">
               {/* <!-- Github --> */}
               <svg
