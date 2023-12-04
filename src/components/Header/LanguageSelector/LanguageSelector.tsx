@@ -90,7 +90,7 @@ const LanguageSelector = () => {
         <div
           ref={dropdownRef}
           className={
-            "w-28 z-10 font-black absolute translate-y-2 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+            "w-28 z-10 absolute translate-y-2 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
           }
         >
           <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
@@ -100,8 +100,8 @@ const LanguageSelector = () => {
                 changeLanguage(LOCALES.ENGLISH);
               }}
             >
-              <div className="flex gap-2">
-                <span>{t("header.language.en")}</span>
+              <div className="flex justify-between">
+                <span>{t("language.en")}</span>
                 {i18n.language === LOCALES.ENGLISH && (
                   <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
                 )}
@@ -113,8 +113,8 @@ const LanguageSelector = () => {
                 changeLanguage(LOCALES.CASTELLANO);
               }}
             >
-              <div className="flex gap-2">
-                <span> {t("header.language.es")}</span>
+              <div className="flex justify-between">
+                <span> {t("language.es")}</span>
                 {i18n.language === LOCALES.CASTELLANO && (
                   <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
                 )}
@@ -126,8 +126,8 @@ const LanguageSelector = () => {
                 changeLanguage(LOCALES.CATALA);
               }}
             >
-              <div className="flex gap-2">
-                <span>{t("header.language.ca")}</span>
+              <div className="flex justify-between">
+                <span>{t("language.ca")}</span>
                 {i18n.language === LOCALES.CATALA && (
                   <CheckCircleIcon className="h-5 w-5"></CheckCircleIcon>
                 )}

@@ -5,11 +5,20 @@
       "about": "About",
       "projects": "Projects",
       "contact": "Contact"
-    },
-    "language": {
-      "en": "English",
-      "es": "Español",
-      "ca": "Català"
+    }
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "ca": "Català"
+  },
+  "footer": {
+    "copyright": "© 2023 Gerard Heredia. All Rights Reserved.",
+    "labels": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
     }
   }
 }
