@@ -19,7 +19,7 @@ const MobileHeaderLink: FC<MobileHeaderLinkProps> = ({
   return (
     <Link
       to={href}
-      className={`font-semibold p-2 duration-300 ease-in-out hover:bg-neutral-50`}
+      className={`font-medium p-2 duration-300 ease-in-out hover:bg-neutral-50`}
       onClick={handleClick}
     >
       <div

@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import MobileNavList from "../MobileNavList/MobileNavList";
 import NavList from "../NavList/NavList";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
-
+import { useTranslation } from "react-i18next";
 export default function AppNavbar() {
+  const { t } = useTranslation();
+
   const [openNav, setOpenNav] = React.useState(false);
 
   const handleWindowResize = () =>
@@ -28,9 +30,9 @@ export default function AppNavbar() {
       <div className="flex items-center justify-between">
         <Link
           to=""
-          className="mr-2 font-semibold hover:text-tertiary cursor-pointer py-1.5"
+          className="mr-2 font-semibold text-xl cursor-pointer py-1.5"
         >
-          Placeholder
+          {t("header.name")}
         </Link>
         <div className="hidden lg:flex items-center gap-10">
           <NavList />

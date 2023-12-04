@@ -65,7 +65,7 @@ const LanguageSelector = () => {
       <button
         ref={buttonRef}
         type="button"
-        className="w-24  flex px-3 py-1.5 font-semibold border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-full text-sm dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        className="w-24  flex px-3 py-1.5 font-medium border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-full text-sm dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
         onClick={toggleDropdown}
       >
         <GlobeAltIcon className="h-4 w-4 me-1 mt-0.5" strokeWidth={1} />

@@ -1,5 +1,6 @@
 {
   "header": {
+    "name": "Gerard Heredia",
     "labels": {
       "home": "Inicio",
       "about": "Acerca de mí",
@@ -18,7 +19,8 @@
       "home": "Inicio",
       "about": "Acerca de mí",
       "projects": "Proyectos",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "privacy": "Política de privacidad"
     }
   }
 }
