@@ -6,8 +6,7 @@ import NavList from "../NavList/NavList";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useTranslation } from "react-i18next";
 export default function AppNavbar() {
-
-  const { t }  = useTranslation();
+  const { t } = useTranslation();
 
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -33,7 +32,7 @@ export default function AppNavbar() {
           to=""
           className="mr-2 font-semibold text-xl cursor-pointer py-1.5"
         >
-          {t('header.name')}
+          {t("header.name")}
         </Link>
         <div className="hidden lg:flex items-center gap-10">
           <NavList />

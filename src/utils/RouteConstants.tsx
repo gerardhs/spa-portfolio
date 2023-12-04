@@ -12,7 +12,7 @@ const ROUTES = [
   { path: PATH_CONSTANTS.ABOUT, element: <About /> },
   { path: PATH_CONSTANTS.PROJECTS, element: <Projects /> },
   { path: PATH_CONSTANTS.CONTACT, element: <Contact /> },
-  { path: PATH_CONSTANTS.PRIVACY, element: <Privacy /> }
+  { path: PATH_CONSTANTS.PRIVACY, element: <Privacy /> },
 ];
 
 export default ROUTES;
