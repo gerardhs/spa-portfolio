@@ -12,7 +12,7 @@ function App() {
   ]);
 
   return (
-    <div className="bg-background h-screen">
+    <div>
       <RouterProvider router={router} />
     </div>
   );

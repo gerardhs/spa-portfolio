@@ -22,5 +22,11 @@
       "contact": "Contact",
       "privacy": "Privacy policy"
     }
+  },
+  "pages": {
+    "home": {
+      "name": "GERARD HEREDIA",
+      "role": "Full Stack Developer"
+    }
   }
 }

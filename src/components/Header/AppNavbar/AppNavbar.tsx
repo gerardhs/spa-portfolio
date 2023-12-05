@@ -26,19 +26,16 @@ export default function AppNavbar() {
   }, []);
 
   return (
-    <nav className="my-auto mx-auto max-w-screen-2xl px-3 py-6">
+    <nav className="my-auto mx-auto max-w-screen-xl px-3 py-6">
       <div className="flex items-center justify-between">
-        <Link
-          to=""
-          className="mr-2 font-semibold text-xl cursor-pointer py-1.5"
-        >
+        <Link to="" className="mr-2 font-medium text-xl cursor-pointer py-1.5">
           {t("header.name")}
         </Link>
-        <div className="hidden lg:flex items-center gap-10">
+        <div className="hidden lg:block">
           <NavList />
-          <div className="mr-2">
-            <LanguageSelector />
-          </div>
+        </div>
+        <div className="hidden lg:block">
+          <LanguageSelector />
         </div>
         <div className="lg:hidden">
           <button
