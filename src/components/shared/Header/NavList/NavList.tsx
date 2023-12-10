@@ -1,6 +1,6 @@
 import { HeaderLink } from "../..";
 import { useTranslation } from "react-i18next";
-import { PATH_CONSTANTS } from "../../../utils";
+import { PATH_CONSTANTS } from "../../../../utils";
 
 export default function NavList() {
   const { t } = useTranslation();

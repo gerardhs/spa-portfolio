@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { PATH_CONSTANTS, SOCIALS } from "../../utils";
+import { PATH_CONSTANTS, SOCIALS } from "../../../utils";
 import { Link } from "react-router-dom";
 
 function Footer() {

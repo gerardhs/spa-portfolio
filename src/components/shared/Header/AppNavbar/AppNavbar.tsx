@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import MobileNavList from "../MobileNavList/MobileNavList";
 import NavList from "../NavList/NavList";
-import LanguageSelector from "../LanguageSelector/LanguageSelector";
+import LanguageSelector from "../../../reusable/LanguageSelector/LanguageSelector";
 import { useTranslation } from "react-i18next";
 export default function AppNavbar() {
   const { t } = useTranslation();

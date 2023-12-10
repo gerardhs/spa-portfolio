@@ -1,5 +1,5 @@
 import "./App.css";
-import { Layout } from "./components";
+import { Layout } from "./components/shared";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./utils";
 
