@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { MobileHeaderLink } from "../..";
 import { useTranslation } from "react-i18next";
-import { PATH_CONSTANTS } from "../../../utils";
+import { PATH_CONSTANTS } from "../../../../utils";
 
 interface MobileHeaderLinkProps {
   onClose: () => void;

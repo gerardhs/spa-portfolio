@@ -1,5 +1,5 @@
 import "./App.css";
-import { Layout } from "./components";
+import { Layout } from "./components/shared";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./utils";
 
@@ -12,7 +12,7 @@ function App() {
   ]);
 
   return (
-    <div className="bg-background h-screen">
+    <div>
       <RouterProvider router={router} />
     </div>
   );

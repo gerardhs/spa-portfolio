@@ -22,5 +22,11 @@
       "contact": "Contacte",
       "privacy": "Política de privacitat"
     }
+  },
+  "pages": {
+    "home": {
+      "name": "GERARD HEREDIA",
+      "role": "Desenvolupador Full Stack"
+    }
   }
 }

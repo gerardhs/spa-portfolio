@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { PATH_CONSTANTS, SOCIALS } from "../../utils";
+import { PATH_CONSTANTS, SOCIALS } from "../../../utils";
 import { Link } from "react-router-dom";
 
 function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="fixed bottom-0 w-full">
+    <footer className="w-full">
       <div className="p-2 w-full mx-auto max-w-screen-2xl flex items-center justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           {t("footer.copyright")}
