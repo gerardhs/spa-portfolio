@@ -1,0 +1,64 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cloud-wrap {
+  animation: infinity-loop 5s infinite linear 0.1s both;
+  flex: 1 0 auto;
+  flex-grow: 1;
+  width: 150%;
+}
+
+.cloud-1 {
+  animation: cloud-pulse 10s infinite linear;
+  z-index: 1;
+}
+
+.cloud-2 {
+  animation: cloud-pulse 10s infinite linear;
+  z-index: 2;
+  margin-top: 2em;
+}
+
+.spinning {
+  animation: spin 30s infinite linear;
+}
+
+.laptop {
+  background-color: aqua;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infinity-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes cloud-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

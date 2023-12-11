@@ -28,6 +28,16 @@ module.exports = {
         secondary: "#fffffe",
         tertiary: "#d9376e",
       },
+      keyframes: {
+        "cloud-pulse": {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        "cloud-animation": "cloud-pulse 3s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
