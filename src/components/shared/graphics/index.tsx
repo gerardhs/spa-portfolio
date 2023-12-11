@@ -1,1 +1,1 @@
-export { default as WindowGraphic } from "./WindowGraphic";
+export { default as HomeGraphic } from "./HomeGraphic";

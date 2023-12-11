@@ -1,7 +1,7 @@
 import "../../../styles/graphics.css";
 import { Transition } from "@headlessui/react";
 
-export default function WindowGraphic() {
+export default function HomeGraphic() {
   return (
     <div className="flex items-end">
       <Transition
@@ -20,7 +20,7 @@ export default function WindowGraphic() {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`relative xl:w-[36.5rem] lg:w-[30rem] md:w-96 sm:w-80 w-44 xl:top-[4.2rem] lg:top-[3.5rem] md:top-[2.8rem] sm:top-[2.3rem] top-5`}
+            className={`relative xl:w-[36.5rem] lg:w-[30rem] md:w-96 sm:w-80 w-[7.5rem] xl:top-[4.2rem] lg:top-[3.5rem] md:top-[2.8rem] sm:top-[2.3rem] top-[0.9rem] `}
           >
             <path
               className="desktop-animated"
@@ -34,7 +34,7 @@ export default function WindowGraphic() {
         <svg
           viewBox="0 0 800  600"
           xmlns="http://www.w3.org/2000/svg"
-          className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-16 right-2"
+          className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-12"
         >
           <g>
             <path
