@@ -1,15 +1,16 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 :root {
-  --ff-primary: 'InterDisplay', sans-serif;
+  --ff-primary: "InterDisplay", sans-serif;
   --fs-body: 1rem;
 }
 
 @supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 body {
@@ -23,5 +24,5 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
+    monospace;
 }

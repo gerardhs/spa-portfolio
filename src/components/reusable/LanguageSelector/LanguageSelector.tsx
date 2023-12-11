@@ -95,7 +95,11 @@ const LanguageSelector = () => {
         >
           <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
             <li
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer  ${
+                i18n.language === LOCALES.ENGLISH
+                  ? "bg-gray-100 dark:bg-gray-600"
+                  : ""
+              }`}
               onClick={() => {
                 changeLanguage(LOCALES.ENGLISH);
               }}
@@ -108,7 +112,11 @@ const LanguageSelector = () => {
               </div>
             </li>
             <li
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer  ${
+                i18n.language === LOCALES.CASTELLANO
+                  ? "bg-gray-100 dark:bg-gray-600"
+                  : ""
+              }`}
               onClick={() => {
                 changeLanguage(LOCALES.CASTELLANO);
               }}
@@ -121,7 +129,11 @@ const LanguageSelector = () => {
               </div>
             </li>
             <li
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+              className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer  ${
+                i18n.language === LOCALES.CATALA
+                  ? "bg-gray-100 dark:bg-gray-600"
+                  : ""
+              }`}
               onClick={() => {
                 changeLanguage(LOCALES.CATALA);
               }}
