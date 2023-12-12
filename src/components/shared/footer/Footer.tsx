@@ -7,11 +7,11 @@ function Footer() {
 
   return (
     <footer className="w-full">
-      <div className="p-2 w-full mx-auto max-w-screen-2xl flex items-center justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <div className="p-2 w-full mx-auto max-w-screen-2xl flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-between">
+        <span className="text-sm  text-gray-700 sm:text-center dark:text-gray-400">
           {t("footer.copyright")}
         </span>
-        <ul className="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <ul className="flex flex-wrap items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-400 sm:mt-0">
           <li>
             <Link
               to={PATH_CONSTANTS.HOME}
@@ -52,10 +52,11 @@ function Footer() {
               {t("footer.labels.privacy")}
             </Link>
           </li>
-          <div className="flex items-center gap-6 m-4">
+          <li className="flex items-center gap-6 m-4">
             <Link
               to={SOCIALS.GITHUB}
               className="p-1 rounded hover:text-gray-900"
+              aria-label={t("links.github")}
             >
               {/* <!-- Github --> */}
               <svg
@@ -70,6 +71,7 @@ function Footer() {
             <Link
               to={SOCIALS.LINKEDIN}
               className="p-1 rounded hover:text-gray-900"
+              aria-label={t("links.linkedin")}
             >
               {/* <!-- Linkedin --> */}
               <svg
@@ -81,7 +83,7 @@ function Footer() {
                 <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
               </svg>
             </Link>
-          </div>
+          </li>
         </ul>
       </div>
     </footer>
