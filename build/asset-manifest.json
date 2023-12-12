@@ -1,18 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1ba2c80.css",
-    "main.js": "/static/js/main.43caca0e.js",
-    "static/css/269.9a343819.chunk.css": "/static/css/269.9a343819.chunk.css",
+    "main.css": "/static/css/main.41dcd97f.css",
+    "main.js": "/static/js/main.98f4ce97.js",
+    "static/css/269.91fce6ef.chunk.css": "/static/css/269.91fce6ef.chunk.css",
     "static/js/269.37e49c29.chunk.js": "/static/js/269.37e49c29.chunk.js",
     "static/js/470.71ab8e32.chunk.js": "/static/js/470.71ab8e32.chunk.js",
     "static/js/539.a0520338.chunk.js": "/static/js/539.a0520338.chunk.js",
     "static/js/660.c8329f9b.chunk.js": "/static/js/660.c8329f9b.chunk.js",
     "static/js/545.97c9f861.chunk.js": "/static/js/545.97c9f861.chunk.js",
     "static/js/787.b9d66382.chunk.js": "/static/js/787.b9d66382.chunk.js",
+    "static/media/InterDisplay-ExtraBoldItalic.ttf": "/static/media/InterDisplay-ExtraBoldItalic.8e962627164c62866604.ttf",
+    "static/media/InterDisplay-BlackItalic.ttf": "/static/media/InterDisplay-BlackItalic.b8d811d7083d0ffb1ebb.ttf",
+    "static/media/InterDisplay-SemiBoldItalic.ttf": "/static/media/InterDisplay-SemiBoldItalic.6bab3e4b7dbae3beb811.ttf",
+    "static/media/InterDisplay-BoldItalic.ttf": "/static/media/InterDisplay-BoldItalic.f8f2d960f5f6351d54ca.ttf",
+    "static/media/InterDisplay-MediumItalic.ttf": "/static/media/InterDisplay-MediumItalic.9d555f0c41b6e7fc8d9d.ttf",
+    "static/media/InterDisplay-ExtraBold.ttf": "/static/media/InterDisplay-ExtraBold.8ebe66c0320379cdbd16.ttf",
+    "static/media/InterDisplay-LightItalic.ttf": "/static/media/InterDisplay-LightItalic.3a38efdfee07009855cc.ttf",
+    "static/media/InterDisplay-Bold.ttf": "/static/media/InterDisplay-Bold.fcbf151eb928686c2bd0.ttf",
+    "static/media/InterDisplay-SemiBold.ttf": "/static/media/InterDisplay-SemiBold.67b44ebd4addee42f07e.ttf",
+    "static/media/InterDisplay-Black.ttf": "/static/media/InterDisplay-Black.888966f8ca2814f69dd0.ttf",
+    "static/media/InterDisplay-Medium.ttf": "/static/media/InterDisplay-Medium.ae02117e79fc615e9ae8.ttf",
+    "static/media/InterDisplay-Italic.ttf": "/static/media/InterDisplay-Italic.f5dae7a1c4d17236f387.ttf",
+    "static/media/InterDisplay-ExtraLightItalic.ttf": "/static/media/InterDisplay-ExtraLightItalic.75afe6162ccc99a3b7f0.ttf",
+    "static/media/InterDisplay-Light.ttf": "/static/media/InterDisplay-Light.310952a55b8bf8c05235.ttf",
+    "static/media/InterDisplay-ThinItalic.ttf": "/static/media/InterDisplay-ThinItalic.b0968eaadee9fb9985f9.ttf",
+    "static/media/InterDisplay-Regular.ttf": "/static/media/InterDisplay-Regular.ba835d1c38c04a49d1f4.ttf",
+    "static/media/InterDisplay-ExtraLight.ttf": "/static/media/InterDisplay-ExtraLight.62ef88df16557246117d.ttf",
+    "static/media/InterDisplay-Thin.ttf": "/static/media/InterDisplay-Thin.179370680a17afdd9b54.ttf",
     "index.html": "/index.html",
-    "main.b1ba2c80.css.map": "/static/css/main.b1ba2c80.css.map",
-    "main.43caca0e.js.map": "/static/js/main.43caca0e.js.map",
-    "269.9a343819.chunk.css.map": "/static/css/269.9a343819.chunk.css.map",
+    "main.41dcd97f.css.map": "/static/css/main.41dcd97f.css.map",
+    "main.98f4ce97.js.map": "/static/js/main.98f4ce97.js.map",
+    "269.91fce6ef.chunk.css.map": "/static/css/269.91fce6ef.chunk.css.map",
     "269.37e49c29.chunk.js.map": "/static/js/269.37e49c29.chunk.js.map",
     "470.71ab8e32.chunk.js.map": "/static/js/470.71ab8e32.chunk.js.map",
     "539.a0520338.chunk.js.map": "/static/js/539.a0520338.chunk.js.map",
@@ -21,7 +39,7 @@
     "787.b9d66382.chunk.js.map": "/static/js/787.b9d66382.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1ba2c80.css",
-    "static/js/main.43caca0e.js"
+    "static/css/main.41dcd97f.css",
+    "static/js/main.98f4ce97.js"
   ]
 }

@@ -28,5 +28,9 @@
       "name": "GERARD HEREDIA",
       "role": "Full Stack Developer"
     }
+  },
+  "links": {
+    "linkedin": "Check out my LinkedIn profile",
+    "github": "Checkout out my GitHub profile"
   }
 }
