@@ -2,18 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.cloud-wrap {
-  animation: infinity-loop 5s infinite linear 0.1s both;
-  flex: 1 0 auto;
-  flex-grow: 1;
-  width: 150%;
-}
-
 .desktop-animated {
   stroke-dasharray: 50;
   stroke-dashoffset: 0;
@@ -28,6 +16,22 @@
   stroke: none;
   animation: mug-dash 2.5s linear forwards;
   animation-delay: 0.9s;
+}
+
+.steam-animated {
+  stroke-dasharray: 15;
+  stroke-dashoffset: 0;
+  animation: steam-dash 5s ease-in infinite;
+  animation-delay: 5s;
+  stroke: none;
+}
+
+.steam-animated-2 {
+  stroke-dasharray: 15;
+  stroke-dashoffset: 0;
+  animation: steam-dash 5s ease-in infinite;
+  animation-delay: 7.5s;
+  stroke: none;
 }
 
 @keyframes dash {
@@ -49,5 +53,28 @@
   100% {
     stroke: black;
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes steam-dash {
+  0% {
+    stroke-dashoffset: 15;
+    opacity: 0;
+    stroke: #000;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -15;
+    opacity: 0;
+    transform: translateY(-0.65rem);
+    stroke: #000;
   }
 }
