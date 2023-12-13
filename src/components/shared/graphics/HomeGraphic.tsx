@@ -20,7 +20,12 @@ export default function HomeGraphic() {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`relative xl:w-[36.5rem] lg:w-[30rem] md:w-96 sm:w-80 w-[7.5rem] xl:top-[4.2rem] lg:top-[3.5rem] md:top-[2.8rem] sm:top-[2.3rem] top-[0.9rem] `}
+            className="relative 
+            xl:w-[36.5rem] xl:top-[4.2rem]
+            lg:w-[30rem] lg:top-[3.5rem]
+            md:w-96 md:top-[2.8rem]
+            sm:w-80 sm:top-[2.3rem]
+            w-[7.5rem] top-[0.9rem]"
           >
             <path
               className="desktop-animated"
@@ -32,26 +37,19 @@ export default function HomeGraphic() {
           </svg>
         </div>
         <div className="flex flex-col">
-          <div className="flex  mr-[-17.75rem]">
+          <div className="w-0">
             <svg
               viewBox="20 0 60 60"
-              className="w-80 h-80 relative right-[9.25rem] top-[6.4rem] mr-[-9.25rem]"
+              className="relative 
+              xl:w-80 xl:right-[8.5rem] xl:top-[6.4rem] 
+              lg:w-72 lg:right-[8.4rem] lg:top-[5.8rem] 
+              md:w-56 md:right-[6.5rem] md:top-[4.5rem] 
+              sm:w-56 sm:right-[5.9rem] sm:top-[4.5rem] 
+              w-32 right-[2.55rem] top-[2.5rem]"
             >
               <path
                 d="M 49.41,41.77425 C50.3875,40.8619167 50.3875,39.38725 49.41,38.4749167 C46.8725,36.10425 46.8725,32.2495833 49.41,29.8789167 "
                 className="steam-animated"
-                fill="none"
-                stroke="#000000"
-                strokeWidth="1"
-              ></path>
-            </svg>
-            <svg
-              viewBox="20 0 60 60"
-              className="w-80 h-80 relative right-[17.75rem] top-[6.4rem] mr-[-17.75rem]"
-            >
-              <path
-                d="M 49.41,41.77425 C50.3875,40.8619167 50.3875,39.38725 49.41,38.4749167 C46.8725,36.10425 46.8725,32.2495833 49.41,29.8789167 "
-                className="steam-animated-2"
                 fill="none"
                 stroke="#000000"
                 strokeWidth="1"

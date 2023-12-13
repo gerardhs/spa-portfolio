@@ -22,15 +22,7 @@
   stroke-dasharray: 15;
   stroke-dashoffset: 0;
   animation: steam-dash 5s ease-in infinite;
-  animation-delay: 5s;
-  stroke: none;
-}
-
-.steam-animated-2 {
-  stroke-dasharray: 15;
-  stroke-dashoffset: 0;
-  animation: steam-dash 5s ease-in infinite;
-  animation-delay: 7.5s;
+  animation-delay: 3s;
   stroke: none;
 }
 
