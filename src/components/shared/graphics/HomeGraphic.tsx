@@ -20,7 +20,12 @@ export default function HomeGraphic() {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`relative xl:w-[36.5rem] lg:w-[30rem] md:w-96 sm:w-80 w-[7.5rem] xl:top-[4.2rem] lg:top-[3.5rem] md:top-[2.8rem] sm:top-[2.3rem] top-[0.9rem] `}
+            className="relative 
+            xl:w-[36.5rem] xl:top-[4.2rem]
+            lg:w-[30rem] lg:top-[3.5rem]
+            md:w-96 md:top-[2.8rem]
+            sm:w-80 sm:top-[2.3rem]
+            w-[7.5rem] top-[0.9rem]"
           >
             <path
               className="desktop-animated"
@@ -31,21 +36,43 @@ export default function HomeGraphic() {
             />
           </svg>
         </div>
-        <svg
-          viewBox="0 0 800  600"
-          xmlns="http://www.w3.org/2000/svg"
-          className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-12"
-        >
-          <g>
-            <path
-              className="mug-animated"
-              stroke="#000"
-              d="m203.43204,584.11247l316.43114,0c45.61145,-0.11106 76.72797,-50.59556 76.57607,-102.53276l0,-34.92245c90.30474,-0.09329 155.82225,-89.31634 155.7885,-193.35511c0.03376,-105.89129 -64.19765,-192.88865 -138.961,-192.81312l-487.74077,0l0,421.09956c0.07089,57.18378 37.49645,102.4217 77.90606,102.52388zm392.99708,-444.41377l0,0l16.82749,0c61.86847,-0.12883 81.71377,76.87292 81.41671,114.18098c0.06076,60.24022 -33.84065,118.01485 -98.24421,112.40842l0,-226.5894z"
-              strokeWidth="36"
-              fill="none"
-            />
-          </g>
-        </svg>
+        <div className="flex flex-col">
+          <div className="w-0">
+            <svg
+              viewBox="20 0 60 60"
+              className="relative 
+              xl:w-80 xl:right-[8.5rem] xl:top-[6.4rem] 
+              lg:w-72 lg:right-[8.4rem] lg:top-[5.8rem] 
+              md:w-56 md:right-[6.5rem] md:top-[4.5rem] 
+              sm:w-56 sm:right-[5.9rem] sm:top-[4.5rem] 
+              w-32 right-[2.55rem] top-[2.5rem]"
+            >
+              <path
+                d="M 49.41,41.77425 C50.3875,40.8619167 50.3875,39.38725 49.41,38.4749167 C46.8725,36.10425 46.8725,32.2495833 49.41,29.8789167 "
+                className="steam-animated"
+                fill="none"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+            </svg>
+          </div>
+
+          <svg
+            viewBox="0 0 800  600"
+            xmlns="http://www.w3.org/2000/svg"
+            className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-12"
+          >
+            <g>
+              <path
+                className="mug-animated"
+                stroke="#000"
+                d="m203.43204,584.11247l316.43114,0c45.61145,-0.11106 76.72797,-50.59556 76.57607,-102.53276l0,-34.92245c90.30474,-0.09329 155.82225,-89.31634 155.7885,-193.35511c0.03376,-105.89129 -64.19765,-192.88865 -138.961,-192.81312l-487.74077,0l0,421.09956c0.07089,57.18378 37.49645,102.4217 77.90606,102.52388zm392.99708,-444.41377l0,0l16.82749,0c61.86847,-0.12883 81.71377,76.87292 81.41671,114.18098c0.06076,60.24022 -33.84065,118.01485 -98.24421,112.40842l0,-226.5894z"
+                strokeWidth="36"
+                fill="none"
+              />
+            </g>
+          </svg>
+        </div>
       </Transition>
     </div>
   );
