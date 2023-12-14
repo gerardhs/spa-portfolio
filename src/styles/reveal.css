@@ -1,0 +1,42 @@
+.reveal {
+  color: #0000;
+  --g: linear-gradient(#000 0 0) no-repeat;
+  background: var(--g), var(--g);
+  background-size: 100% 0%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  animation:
+    top-bottom 0.75s 0.5s linear both,
+    back 0.7s 1s both;
+}
+
+.reveal-underline {
+  color: black;
+  --g: linear-gradient(black 0 0) no-repeat;
+  background: var(--g), var(--g);
+  background-size: 100% 0%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  animation:
+    top-bottom 1s 1s linear both,
+    under 1.5s 2s both;
+}
+
+@keyframes top-bottom {
+  to {
+    background-size: 100% 150%;
+  }
+}
+@keyframes back {
+  to {
+    background-position:
+      0% -200%,
+      0 0;
+  }
+}
+
+@keyframes under {
+  100% {
+    width: 100%;
+  }
+}

@@ -35,14 +35,9 @@ module.exports = {
           "100%": { transform: "scale(1)" },
         },
         underline: {
-          "0%": { transform: "scaleX(0)" },
+          "0%": { transform: "scaleX(0)"},
           "100%": { transform: "scaleX (1)" },
-        },
-        reveal: {
-          "0%": { transform: "scaleX(0)" },
-          "50%": { transform: "scaleX(1)" },
-          "100%": { transform: "scaleX (0)" },
-        },
+        }
       },
       transitionProperty: {
         width: "width",
