@@ -8,7 +8,7 @@ export default function HomeGraphic() {
         className="flex items-end"
         appear={true}
         show={true}
-        enter="transition-transform duration-500 delay-[3s]"
+        enter="transition-transform duration-500 delay-[5s]"
         enterFrom="lg:translate-y-3 translate-y-2"
         enterTo=""
         leave="transition-opacity"
@@ -37,10 +37,11 @@ export default function HomeGraphic() {
           </svg>
         </div>
         <div className="flex flex-col">
-          <div className="w-0">
+          {/**
+           * <div className="w-0">
             <svg
               viewBox="20 0 60 60"
-              className="relative 
+              className="relative
               xl:w-80 xl:right-[8.5rem] xl:top-[6.4rem] 
               lg:w-72 lg:right-[8.4rem] lg:top-[5.8rem] 
               md:w-56 md:right-[6.5rem] md:top-[4.5rem] 
@@ -56,6 +57,7 @@ export default function HomeGraphic() {
               ></path>
             </svg>
           </div>
+           */}
 
           <svg
             viewBox="0 0 800  600"

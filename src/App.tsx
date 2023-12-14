@@ -1,5 +1,6 @@
 import "./App.css";
 import "./styles/fonts.css";
+import "./styles/reveal.css";
 import { Layout } from "./components/shared";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./utils";
