@@ -37,32 +37,27 @@ export default function HomeGraphic() {
           </svg>
         </div>
         <div className="flex flex-col">
-          {/**
-           * <div className="w-0">
-            <svg
-              viewBox="20 0 60 60"
-              className="relative
-              xl:w-80 xl:right-[8.5rem] xl:top-[6.4rem] 
-              lg:w-72 lg:right-[8.4rem] lg:top-[5.8rem] 
-              md:w-56 md:right-[6.5rem] md:top-[4.5rem] 
-              sm:w-56 sm:right-[5.9rem] sm:top-[4.5rem] 
-              w-32 right-[2.55rem] top-[2.5rem]"
-            >
-              <path
-                d="M 49.41,41.77425 C50.3875,40.8619167 50.3875,39.38725 49.41,38.4749167 C46.8725,36.10425 46.8725,32.2495833 49.41,29.8789167 "
-                className="steam-animated"
-                fill="none"
-                stroke="#000000"
-                strokeWidth="1"
-              ></path>
-            </svg>
-          </div>
-           */}
-
+          <svg
+            viewBox="20 0 60 60"
+            className="relative
+              xl:w-80 xl:right-[8.5rem] xl:mr-[-8.5rem] xl:top-[6.75rem] 
+              lg:w-56 lg:right-[6.5rem] lg:mr-[-6.5rem] lg:top-[4.95rem] 
+              md:w-36 md:right-[4rem] md:mr-[-4rem] md:top-[3.1rem]  
+              sm:w-36 sm:right-[3.5rem] sm:mr-[-3.5rem] sm:top-[3.2rem] 
+              w-20 right-[1.2rem] mr-[-1.2rem] top-[1.8rem]"
+          >
+            <path
+              d="M 49.41,41.77425 C50.3875,40.8619167 50.3875,39.38725 49.41,38.4749167 C46.8725,36.10425 46.8725,32.2495833 49.41,29.8789167 "
+              className="steam-animated"
+              fill="none"
+              stroke="#000000"
+              strokeWidth="1"
+            ></path>
+          </svg>
           <svg
             viewBox="0 0 800  600"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-12"
+            className="relative xl:w-[10rem] lg:w-[8rem] md:w-26 sm:w-[5.5rem] lg:right-12 md:right-8 sm:right-6 top-0 w-12 z-10"
           >
             <g>
               <path
