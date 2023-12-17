@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 
 export default function HomeGraphic() {
   return (
-    <div className="flex items-end">
+    <div className="flex justify-end">
       <Transition
         className="flex items-end"
         appear={true}
