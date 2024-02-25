@@ -3,8 +3,10 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            // Checkout the source code from the repository
-            git 'https://github.com/yourusername/your-repo.git'
+            steps {
+                // Checkout the source code from the repository
+                git 'https://github.com/yourusername/your-repo.git'
+            }
         }
         stage('Build') {
             steps {
