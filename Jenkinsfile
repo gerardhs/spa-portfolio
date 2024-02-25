@@ -2,10 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+            // Checkout the source code from the repository
+            git 'https://github.com/yourusername/your-repo.git'
+        }
         stage('Build') {
             steps {
-                // Checkout the source code from the repository
-                git 'https://github.com/gerardhs/spa-portfolio.git'
                 // Build your React app
                 sh 'npm install'
                 sh 'npm run build'
