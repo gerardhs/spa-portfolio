@@ -8,7 +8,6 @@ export default function Home() {
     <div className="flex-grow mx-auto max-w-screen-xl xl:p-0 p-2 ">
       <div className={`flex justify-between items-end`}>
         <div className="reveal md:w-2/5 w-1/2">
-          Jenkins integration test
           <h2 className="font-medium xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-md">
             {t("pages.home.name")}
           </h2>
