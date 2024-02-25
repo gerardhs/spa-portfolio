@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the source code from the repository
-                git 'https://github.com/yourusername/your-repo.git'
-            }
-        }
         stage('Build') {
             steps {
                 // Build your React app
